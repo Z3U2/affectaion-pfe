@@ -3,6 +3,7 @@ package gl.group.pfe.services;
 import java.util.List;
 
 import gl.group.pfe.common.exceptions.NotFoundException;
+import gl.group.pfe.common.injection.UseCase;
 import gl.group.pfe.domain.Student;
 import gl.group.pfe.domain.Teacher;
 import gl.group.pfe.domain.User.UserId;
@@ -19,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 /**
  * EditListService
  */
+@UseCase
 @RequiredArgsConstructor
 public class EditListService implements EditStudentListUseCase, EditTeacherListUseCase {
 
